@@ -5,7 +5,6 @@ import {
   Text,
   Group,
   List,
-  Center,
   useMantineTheme,
   Button,
   Box,
@@ -14,7 +13,7 @@ import {
 import { useMediaQuery } from "@mantine/hooks";
 import { DictionaryData } from "../types";
 import { HiMiniSpeakerWave } from "react-icons/hi2";
-import { useState, useRef } from "react";
+import { useRef } from "react";
 
 type DictionaryCardProps = DictionaryData;
 
@@ -22,7 +21,6 @@ const DictCard = ({
   word,
   phonetic,
   phonetics,
-  origin,
   meanings,
 }: DictionaryCardProps) => {
   const theme = useMantineTheme();

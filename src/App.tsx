@@ -6,11 +6,8 @@ import {
   Loader,
   Center,
   Group,
-  Box,
   Text,
   Stack,
-  Button,
-  useMantineColorScheme,
 } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import InfoCard from "./components/InfoCard";
@@ -20,7 +17,6 @@ import {
   WordData,
   SoundLikeData,
   SpellLikeData,
-  DictionaryData,
 } from "./types";
 import { FaBook } from "react-icons/fa";
 import { HiOutlineEmojiHappy } from "react-icons/hi";

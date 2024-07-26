@@ -1,12 +1,11 @@
-import React from "react";
-import { Badge, Card, Flex, Group, Space, Stack, Text, Title } from "@mantine/core";
+import { Badge, Card,Group,Stack, Text, Title } from "@mantine/core";
 import {WordData,SoundLikeData,SpellLikeData} from '.././types.ts';
 import { useMediaQuery } from "@mantine/hooks";
 
 
 type Props = WordData | SoundLikeData | SpellLikeData;
 
-
+//@ts-ignore
 const InfoCard = ({ word, score, tags, numSyllables }: Props) => {
   const isMobile = useMediaQuery('(max-width: 768px)');
 

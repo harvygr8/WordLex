@@ -77,7 +77,7 @@ const InputBar = () => {
     }
   };
 
-  const { data, refetch, isLoading } = useQuery({
+  const { refetch } = useQuery({
     queryKey: ["words"],
     queryFn: () => fetchData(value, endpoint),
     enabled: false,
