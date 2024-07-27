@@ -13,7 +13,7 @@ const InfoCard = ({ word, score, tags, numSyllables }: Props) => {
     <Card withBorder shadow="sm" style={{ width: isMobile?'150px':'200px', height: isMobile?'130px':'160px' }}>
       <Stack gap="xl">
         <Stack gap="xl" justify="space-between">
-          <Title order={isMobile?5:2}>{word}</Title>
+          <Title order={isMobile?5:2} style={{whiteSpace: 'pre-wrap', overflowWrap: 'break-word'}}>{word}</Title>
           {/* {score &&<Text>{score}</Text>} */}
           {numSyllables && <Text>{numSyllables} syllable(s)</Text>}
         </Stack>
