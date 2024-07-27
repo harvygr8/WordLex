@@ -40,7 +40,7 @@ const DictCard = ({
         withBorder
         shadow="sm"
         radius={"md"}
-        style={{ width:isMobile?'370px':'750px', maxHeight: isMobile?'850px':"560px", padding: "16px" }}
+        style={{ width:isMobile?'350px':'750px', minHeight:'200px', maxHeight: isMobile?'850px':"560px", padding: "16px" }}
       >
         <Stack justify="center" gap="lg">
           <Group justify="space-between">
